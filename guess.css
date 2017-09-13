@@ -1,17 +1,12 @@
- .container {
-    width: 200px;
-    height: 201px;
-    background: green;
-    position: relative;
-  }
- #box {
-    width: 50px;
-    height: 50px;
-    background: red;
-    position: absolute;
-  }
-  #bigtext {
-    font-size:18pt;
-    font-weight:bold;
-  }
-  #normal {}
+ #userInput, #message {
+    width: 500px;
+    height: 30px;
+    text-align:center;
+    font-size:24px;
+    border:3px dashed orange;
+}
+
+#message {
+    border:3px dashed magenta;
+    height: 100px;
+}
