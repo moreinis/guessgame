@@ -42,4 +42,17 @@ function start() {
 }
 
 alert("Steel your mind for this, the ultimate game of skill!");
-start();
+var state=0;
+document.body.addEventListener('click', function () {
+	if(state!=1) {
+		alert("starting");
+		state="1";
+		start()
+	}
+	else {
+		alert("stopping");
+		state="0";
+		alert("click page to restart")
+
+	}
+})
