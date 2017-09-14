@@ -1,5 +1,3 @@
-testmessage();
-document.getElementsByName("userInput")[0].addEventListener('change', readGuess);
 
 function readGuess(){
    message(this.value);
@@ -26,7 +24,7 @@ function start() {
     while(playAgain == 'y');
 }
 
-function message (saythis){
+function message(saythis){
 	var containdiv = document.getElementById("message");   // Get the <div> element with id="message"
 	var para = document.createElement("p");
 	var node = document.createTextNode(saythis);

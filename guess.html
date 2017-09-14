@@ -9,5 +9,9 @@
 <h2>Input Here:</h2>
 <input type="text" id="userInput" name="userInput" value="" />
 <script src="guess.js"></script>
+<script>
+testmessage();
+document.getElementsByName("userInput")[0].addEventListener('change', readGuess);
+</script>
 </body>
 </html>
