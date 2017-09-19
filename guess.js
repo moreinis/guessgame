@@ -1,14 +1,13 @@
-
+/* NOTE: This code all needs commenting! - MBM */
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+  // see https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
+    return Math.random() * (max - min) + min;
 }
 
 function playGame(player) {
     var Turns = 0;
-    var Correct = 0;
-    var Answer = getRandomInt(1,100);
+    var Answered = 0;
+    var Answer = getRandomInt(1,101);
     do {
         var Guess = prompt("Guess the integer between 0 and 100!");
         Turns++;
@@ -29,7 +28,7 @@ function playGame(player) {
             player.losses ++;
         }
     }
-    while (Correct == 0);
+    while (Answered == 0);
 }
 
 function start() {
