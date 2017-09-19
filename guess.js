@@ -15,7 +15,7 @@ function playGame(player) {
         if (isNaN(Guess) !== true) {
             if (Guess == Answer) {
                 alert("CORRECT! You guessed it in "+Turns+" turns.");
-                Correct = 1;
+                Answered = 1;
             }
             else if (Guess > Answer) {
                 alert("Hint: Try a lower number!");
