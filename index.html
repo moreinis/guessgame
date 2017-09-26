@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="index.scss">
+</head>
+
+<body>
+  <div id="message">
+  </div>
+  <h2>Input Here:</h2>
+  <input type="text" id="userInput" name="userInput" value="" />
+  <script src="index.js"></script>
+  <script>
+    testmessage();
+    document
+      .getElementsByName("userInput")[0]
+      .addEventListener("change", readGuess);
+  </script>
+</body>
+
+</html>
