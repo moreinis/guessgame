@@ -2,7 +2,7 @@
 var turn=0;
 var answer=0;
 var guess=0;
-var playAgain="n";
+var playAgain="y";
 var games=0;
 var totalTurns=0;
 var average=0;
